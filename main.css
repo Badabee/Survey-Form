@@ -1,0 +1,84 @@
+body{
+    background-color: #1a202c;
+}
+
+.container{
+    background-color: white;
+    margin: auto;
+    width: 45%;
+    padding: 3.2px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto;
+}
+
+.details{
+    margin:32px auto 0 auto;
+    width: 90%;
+}
+
+.survey{
+    color: #6262a0;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    font-size: 24px;
+}
+
+.time{
+    font-size: 16px;
+    color: #4a5568;
+    text-align: center;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    display: block;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.item{
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    margin: 0px 0px 5px;
+    line-height: 0.2;
+    font-weight: 700;
+    color: black;
+}
+
+.enter{
+    color: #1a202c;
+    outline: 0;
+    padding: 12px 8px 12px 12px;
+    background-color: #edf2f7;
+    border: none;
+}
+
+.account{
+    color: white;
+    background-color: #6262a0;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 40px 16px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

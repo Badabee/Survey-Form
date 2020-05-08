@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Survey Form</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
+            <header>
             <h1 class="survey" id="title">FreeCodeCamp Survey Form</h1>
             <p class="time" id="description">Thank you for taking the time to help us improve the platform</p>
-           
-            <form action="" id="survey-form">
+        </header>
+            <form action="" id="survey-form" class="details">
                 <div class="info">
                     <label class="item" id="name" for="place">Name</label><br>
                     <input class="enter" type="text" id="name-label" name="place" placeholder="Enter your name"><br>
                 </div>
                     
                     <div class="info">
-                    <label class="email" for="place" id="email">Email</label><br>
-                    <input class="email" type="date" id="email-label" name="place" placeholder="Enter your email"><br>
+                    <label class="item" for="place" id="email">Email</label><br>
+                    <input class="enter" type="email" id="email-label" name="place" placeholder="Enter your email"><br>
                 </div>
                     
                     <div class="info">
@@ -29,7 +31,7 @@
                       
                 <div class="info">
                     <label for="cars" class="item">Which option best describes your current role?</label><br>
-                    <select id="dropdown"class="enter" placeholder="Select current role"><br>
+                    <select id="dropdown" class="enter" placeholder="Select current role"><br>
                       <option>Student</option>
                       <option>Full Time Job</option>
                       <option>Full Time Learner</option>
@@ -39,18 +41,20 @@
                 </div>
 
                 <div class="info">
-                    <label for="" class="item">Would you recommend freecodecamp to a friend?</label>
-                    <input type="radio" id="def" name="choice" value="def">
-                    <label for="def">Definitely</label>
+                    <label for="" class="item">Would you recommend freecodecamp to a friend?</label><br>
+                    <span>
+                    <input type="radio" id="def" name="choice" value="def" class="enter">
+                    <label for="def">Definitely</label><br>
                     <input type="radio" id="maybe" name="choice" value="maybe">
-                    <label for="maybe">Maybe</label>
+                    <label for="maybe">Maybe</label><br>
                     <input type="radio" id="sure" name="choice" value="sure">
-                    <label for="sure">Not Sure</label>
+                    <label for="sure">Not Sure</label><br>
+                </span>
                 </div>
 
                 <div class="info">
-                    <label for="cars" class="item">What is your favourite feature of freecodecamp?</label><br>
-                    <select id="dropdown"class="enter" placeholder="Select an option"><br>
+                    <label for="cars" placeholder="Select an option" class="item">What is your favourite feature of freecodecamp?</label><br>
+                    <select id="dropdown"class="enter" ><br>
                       <option>Challenges</option>
                       <option>Projects</option>
                       <option>Community</option>
@@ -64,10 +68,14 @@
                 </div>
 
                 <div class="info">
-                    <label for="" class="item">Any comments or suggestions?</label>
-                    <Textarea class="enter" type="text" id="name-label" name="place" placeholder="Enter your name"><br>
-                    
+                    <label for="" class="item">Any comments or suggestions?</label><br>
+                    <Textarea class="enter" type="text" rows="4" cols="50" placeholder="Enter your comment here...">
+                    </Textarea><br>
+                </div>
 
+                <div class="info">
+                    <button type="submit" class="account enter">Submit</button>
+                </div>
             </form>
         </div>
     </div> 
